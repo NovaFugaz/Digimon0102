@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon 01 & 02</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!-- NavBar -->
+
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand mx-auto" href="#">
+      <img src="./assets/img/logo.webp" alt="Logo" width="100" height="47,91">
+    </a>
+    </div>
+</nav>
+
+<!-- Container inicial explicatorio -->
+<div>
+    <div class="container pt-5 text-center overflow-hidden">
+    <p class="fst-italic">Bienvenido, viajero. Esto no es el Digimundo, aunque asumo que podría interesarte.<br>
+        El tiempo de los niños elegidos pasó hace mucho, pero sus hazañas viven en la memoria colectiva.<br>
+        A continuación encontrarás una serie de Digimon. Puedes seleccionar con un clic cada uno de ellos. <br> 
+        Cada vez que lo hagas, nuestro amigo Bokomon buscará en su libro y te dirá el nivel y el nombre del Digimon que has seleccionado.<br>
+        Si seleccionas cualquiera de los niveles evolutivos, junto a los datos de cada Digimon, hallarás una breve explicación de su nivel.</p>
+    </div>
+
+
+<!-- Container de selección por nivel de Digimon -->
+    <div class="container text-center overflow-auto">
+        <p class="fst-italic"> También, si prefieres, puedes buscar tus digimon favorito por cada nivel.</p>
+        <button type="button" class="btn btn-outline-success" id="baby">Fresh</button>
+        <button type="button" class="btn btn-outline-success" id="int">In-Training</button>
+        <button type="button" class="btn btn-outline-success" id="rook">Rookie</button>
+        <button type="button" class="btn btn-outline-success" id="champ">Champion</button>
+        <button type="button" class="btn btn-outline-success" id="ulti">Ultimate</button>
+        <button type="button" class="btn btn-outline-success" id="mega">Mega</button>
+        <button type="button" class="btn btn-outline-success" id="all">Mostrar todos</button>
+    </div>
+</div>
+
+<!-- Galería -->
+<div class="containerh pt-3">
+    <div id="galmon" class="row row-cols-2 row-cols-md-4 row-cols-xl-6">
+    <!-- Acá va lo generado por js -->
+    </div>
+</div>
+
+<!-- Off Canvas -->
+<div class="offcanvas offcanvas-start offcanvas-sm" data-bs-scroll="true" tabindex="-1" id="OffCanvasDigimon" aria-labelledby="OffCanvasDigimon">
+    <div class="offcanvas-header">
+      <img class="mx-auto" src="./assets/img/Bokomon.webp" alt="Bokomonleyendo" width="30" height="69">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <p class="mx-auto fst-italic fw-bold">El libro de Bokomon dice:</p>
+    <div class="offcanvas-body" id="DatosDigimonOC">
+     <!-- Lo de acá lo genera JS  -->
+    </div>
+</div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquerybot.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

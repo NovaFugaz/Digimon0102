@@ -1,0 +1,22 @@
+/* #galmon {
+  overflow: auto;
+  background-image: url(../img/bg.jpeg);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; 
+
+} */
+
+/* Añadir tipografía */
+
+@font-face {
+  font-family: 'DigimonBasic';
+  src: url('../fonts/DigimonBasic.ttf');
+}
+
+/* Llamar tipografía */
+
+#diginame {
+  font-family: 'DigimonBasic', sans-serif;
+}
