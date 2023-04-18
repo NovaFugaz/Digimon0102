@@ -54,3 +54,4 @@ allButton.addEventListener('click', function() {
   .then(digimon => { galeria(digimon) });
 
 })
+
