@@ -32,9 +32,11 @@ function galeria(digimon) {
     img.addEventListener('click', () => {
       const offcanvasBody = document.getElementById('DatosDigimonOC');
       offcanvasBody.innerHTML = `
-        <img src="${temp.img}" alt="${temp.name}" class="text-center">
+      <div class="text-center">
+        <img src="${temp.img}" class="img-fluid mb-4 mx-auto" alt="${temp.name}" width="200">
         <h3 class="text-center" id="diginame">${temp.name}</h3>
         <p class="text-center">Level: ${temp.level}</p>
+        </div>
         <div class="text-center fst-italic text-break fw-lighter">
         <p>${levelText[temp.level]}</p>
       </div>

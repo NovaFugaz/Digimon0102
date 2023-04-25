@@ -25,7 +25,7 @@ $(document).ready(function() {
             const digimonLevel = fresh.find(digimon => digimon.img === digimonImg).level;
             $('#DatosDigimonOC').html(`
               <div class="text-center">
-                <img src="${digimonImg}" class="img-fluid mb-4 mx-auto" alt="${digimonName}" width="200">
+                <img src="${digimonImg}" class="img-fluid mb-4 mx-auto mx-auto" alt="${digimonName}" width="200">
                 <h3 id="diginame">${digimonName}</h3>
                 <p>${digimonLevel}</p>
               </div>
@@ -62,7 +62,7 @@ $('#int').click(function() {
         const digimonLevel = int.find(digimon => digimon.img === digimonImg).level;
         $('#DatosDigimonOC').html(`
           <div class="text-center">
-            <img src="${digimonImg}" class="img-fluid mb-4" alt="${digimonName}" width="200">
+            <img src="${digimonImg}" class="img-fluid mb-4 mx-auto" alt="${digimonName}" width="200">
             <h3 id="diginame">${digimonName}</h3>
             <p>${digimonLevel}</p>
           </div>
@@ -100,7 +100,7 @@ $('#rook').click(function() {
         const digimonLevel = rook.find(digimon => digimon.img === digimonImg).level;
         $('#DatosDigimonOC').html(`
           <div class="text-center">
-            <img src="${digimonImg}" class="img-fluid mb-4" alt="${digimonName}" width="200">
+            <img src="${digimonImg}" class="img-fluid mb-4 mx-auto" alt="${digimonName}" width="200">
             <h3 id="diginame">${digimonName}</h3>
             <p>${digimonLevel}</p>
           </div>
@@ -137,7 +137,7 @@ $('#champ').click(function() {
         const digimonLevel = champ.find(digimon => digimon.img === digimonImg).level;
         $('#DatosDigimonOC').html(`
           <div class="text-center">
-            <img src="${digimonImg}" class="img-fluid mb-4" alt="${digimonName}" width="200">
+            <img src="${digimonImg}" class="img-fluid mb-4 mx-auto" alt="${digimonName}" width="200">
             <h3 id="diginame">${digimonName}</h3>
             <p>${digimonLevel}</p>
           </div>
@@ -174,7 +174,7 @@ $('#ulti').click(function() {
         const digimonLevel = ulti.find(digimon => digimon.img === digimonImg).level;
         $('#DatosDigimonOC').html(`
           <div class="text-center">
-            <img src="${digimonImg}" class="img-fluid mb-4" alt="${digimonName}" width="200">
+            <img src="${digimonImg}" class="img-fluid mb-4 mx-auto" alt="${digimonName}" width="200">
             <h3 id="diginame">${digimonName}</h3>
             <p>${digimonLevel}</p>
           </div>
@@ -211,7 +211,7 @@ $('#mega').click(function() {
         const digimonLevel = mega.find(digimon => digimon.img === digimonImg).level;
         $('#DatosDigimonOC').html(`
           <div class="text-center">
-            <img src="${digimonImg}" class="img-fluid mb-4" alt="${digimonName}" width="200">
+            <img src="${digimonImg}" class="img-fluid mb-4 mx-auto" alt="${digimonName}" width="200">
             <h3 id="diginame">${digimonName}</h3>
             <p>${digimonLevel}</p>
           </div>
