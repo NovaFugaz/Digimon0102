@@ -20,7 +20,6 @@ $(document).ready(function() {
       localStorage.setItem('modoclaro', 'false');
       $('#darkmode').attr('disabled', true);
       $('#lightmode').removeAttr('disabled');
-      location.reload();
     });
 
     // Agregar evento de clic al botón de modo claro
@@ -30,6 +29,5 @@ $(document).ready(function() {
       localStorage.setItem('modoclaro', 'true');
       $('#lightmode').attr('disabled', true);
       $('#darkmode').removeAttr('disabled');
-      location.reload();
     });
   });
