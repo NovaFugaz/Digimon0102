@@ -31,3 +31,11 @@ $(document).ready(function() {
       $('#darkmode').removeAttr('disabled');
     });
   });
+
+// Esto lo separo del resto porque patata.
+
+  $(document).keydown(function(event) {
+    if (event.keyCode === 27) { // "27" es el código de tecla para "Escape"
+      $('#OffCanvasDigimon').offcanvas('hide');
+    }
+  });
